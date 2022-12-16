@@ -20,7 +20,9 @@ a:active {
   --p16-0: 16px 0px;
   --f-size-heading: 24px;
   --m-10-0: 10px 0px;
-  --m-15-0: 15px 9px;
+  --m-15-0: 15px 0px;
+  --grid-column: repeat(4, 1fr);
+  --p0-8: 0px 8px;
 }
 
 body,
@@ -103,7 +105,7 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: var(--grid-column);
   gap: 16px;
 }
 
@@ -111,14 +113,15 @@ html {
   position: relative;
 }
 
-.grid-items img {
+#project .grid-items img {
   width: 100%;
+  height: 100%;
 }
-.grid-items p {
+.grid-items span {
   padding: var(--p8-16);
   font-size: var(--f-size);
 }
-.grid-items p:nth-child(2) {
+.grid-items span:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
@@ -133,4 +136,78 @@ html {
 
 #about .wrap p {
   margin: var(--m-10-0);
+}
+
+#about .grid-items img {
+  width: 100%;
+}
+
+.grid-items h3 {
+  margin: var(--m-10-0);
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.wrap0-8 {
+  padding: var(--p0-8);
+}
+.grid-items .position {
+  opacity: 0.6;
+  font-size: var(--f-size);
+}
+.grid-items .description {
+  margin: var(--m-15-0);
+}
+.grid-items button {
+  width: 100%;
+  padding: var(--p8-16);
+  outline: none;
+  border: none;
+}
+/* CONTACT */
+.contact-inputs li input {
+  width: 100%;
+  padding: 8px;
+  margin: var(--m-15-0);
+  border: #ccc solid 1px;
+}
+
+#contact button {
+  padding: var(--p8-16);
+  color: white;
+  background-color: #000;
+  margin: var(--m-15-0);
+}
+/* MAP */
+#map img {
+  width: 100%;
+}
+
+/* FOOTER */
+#footer {
+  background-color: black;
+  padding: var(--p16-0);
+  text-align: center;
+}
+
+#footer a {
+  color: white;
+}
+
+@media only screen and (max-width: 990px) {
+  :root {
+    --grid-column: repeat(2, 1fr);
+  }
+  #navbar .nav-items {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --grid-column: 1fr;
+  }
+  .hidden {
+    display: none;
+  }
 }
