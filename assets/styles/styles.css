@@ -37,12 +37,20 @@ html {
   padding: var(--p8-16);
   background-color: #fff;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 5;
 }
 
 #navbar .logo {
   padding: var(--p8-16);
   font-size: var(--f-size);
   letter-spacing: 4px;
+}
+#navbar .logo:hover{
+  background-color: #ccc;
 }
 
 #navbar .nav-items {
@@ -56,6 +64,9 @@ html {
 
 #navbar .nav-items li a {
   padding: var(--p8-16);
+}
+#navbar .nav-items li a:hover{
+  background-color: #ccc;
 }
 
 /* HERO */
@@ -177,10 +188,17 @@ html {
   color: white;
   background-color: #000;
   margin: var(--m-15-0);
+  border: none;
+}
+#contact button:hover{
+  background-color: #ccc;
+  outline: none;
+  border: none;
 }
 /* MAP */
 #map img {
   width: 100%;
+  
 }
 
 /* FOOTER */
