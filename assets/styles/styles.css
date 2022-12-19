@@ -230,4 +230,9 @@ html {
   .hidden {
     display: none;
   }
+  #hero img {
+    width: 100%;
+    /* max-width: 1500px; */
+    margin-inline: initial;
+  }
 }
