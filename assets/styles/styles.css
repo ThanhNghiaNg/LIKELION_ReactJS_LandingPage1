@@ -212,6 +212,10 @@ html {
   color: white;
 }
 
+.btn-contact:hover{
+  background-color: rgb(168, 168, 168);
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 990px) {
