@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --f-size-sm: 15px;
+  --f-size-md: 24px;
+  --f-size-lg: 30px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+.logo-text,
+.search i {
+  font-size: var(--f-size-md);
+  transition: all 0.25s ease;
+}
+
+.search i {
+}
+.logo-text,
+.search {
+  width: fit-content;
+}
+.logo-text:hover a {
+  color: #fff !important;
+}
+.logo-text:hover,
+.search:hover {
+  background-color: red;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+/* Booking */
+#hero .booking {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+}
+#hero h3 {
+  font-size: var(--f-size-md);
+}
+#hero .booking-items {
+  margin: 0;
+}
+
+#hero .booking-items li {
+  width: fit-content;
+}
+#hero .booking-items li:hover {
+  background-color: #ccc;
+  color: #000 !important;
+}
+#hero .booking-items li:hover button {
+  color: #000 !important;
+}
+
+#hero .booking-items li button {
+  background-color: transparent;
+  color: #fff !important;
+  border: none;
+}
+
+#hero .booking-items li button i {
+  margin-right: 16px;
+}
+
+/* .booking-body:nth-child(2),
+.booking-body:last-child {
+  display: none;
+} */
+
+.booking-body {
+  background-color: #fff !important;
+}
+
+.booking-body button {
+  width: fit-content;
+}
+.active {
+  background-color: orangered;
+}
+.hidden{
+  display: none;
+}
+/* OFFER */
+
+#offer .text-img span {
+  color: #fff;
+  left: 0;
+  bottom: 0;
+  transform: translate(20px, 0);
+}
+
+#news-letter {
+  opacity: 0.8;
+}
+
+#news-letter:hover {
+  opacity: 1;
+}
+
+#contact .contact-info i {
+  width: 30px;
+}
+
+#contact {
+}
+
+#footer i {
+  width: 21px;
+}
+
+@media screen and (max-width: 764px){
+  #offer .text-img span{
+    font-size: 20px;
+    transform: translate(20px, -20px);
+  }
+}

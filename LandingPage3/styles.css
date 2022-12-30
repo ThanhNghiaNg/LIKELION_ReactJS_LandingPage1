@@ -1,0 +1,131 @@
+:root {
+  --p8-16: 8px 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-block: 10px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+#navbar i {
+  color: #fff;
+  background-color: transparent;
+}
+
+#navbar button {
+  border: none !important;
+}
+/* HEADER */
+#header h1 {
+  font-size: 48px;
+  line-height: 2;
+}
+
+/* HERO */
+#hero .hero-content {
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+#hero .hero-content h2 {
+  font-size: 36px;
+}
+
+#hero .hero-content p {
+  font-size: 64px;
+}
+
+/* BLOG */
+#blog {
+  background-color: #cccccc;
+  padding-block: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.sidebar .sidebar-items .sidebar-header {
+padding: 1rem!important;
+}
+
+.sidebar hr {
+  border: none;
+  background-color: transparent;
+}
+
+.sidebar .sidebar-items h4 {
+  font-size: 20px !important;
+  margin-bottom: 0;
+}
+
+.sidebar-items ul li {
+  padding-block: 12px;
+  border-bottom: solid 1px #ccc;
+}
+
+.sidebar .sidebar-items .advertise {
+  height: 200px;
+  background-color: #ccc;
+  line-height: 200px;
+}
+.sidebar .sidebar-items .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: flex-end;
+}
+.sidebar .sidebar-items .tags span {
+  padding-inline: 8px;
+  background-color: #ccc;
+  height: fit-content;
+  font-size: 12px;
+}
+
+.sidebar .sidebar-items .tags .active {
+  background-color: #000;
+  color: #fff;
+  /* padding-block: 2px; */
+  font-size: 15px;
+}
+.sidebar .sidebar-items .follow ul {
+  display: flex;
+  gap: 0.5em;
+}
+.sidebar .sidebar-items .follow ul li {
+  border-bottom: none;
+  padding: 0;
+}
+.sidebar .sidebar-items .follow ul li a i{
+  font-size: 24px;
+}
+
+.sidebar .sidebar-items .follow ul li a:hover i {
+  color: #ccc;
+}
+
+.like span{
+  margin-left: 0.5em;
+}
